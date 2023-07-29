@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 50vw;
+  height: 40vh;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.985);
+ position: relative;
+ justify-content: center;
+ align-items: center;
+}
+
+.text-style {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  
+ 
+}
+
+.wrapper2 {
+  width: 90%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  left: 350px;
+}
+
+.wrapper2 > h1 {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 900;
+}
+
+.form {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.form > input {
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  /* border-radius: 10px; */
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  width: 500px;
+}
+
+.form > input:read-write {
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0.9rem;
+  outline: none;
+   border-radius: 10px; 
+  background-color: transparent;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+#submitBtn {
+  width:9rem;
+  background-color: rgb(29, 52, 197);
+  color: white;
+  align-items: center;
+   border-radius: 10px; 
+}
+
+@media screen and (max-width: 1000px), (max-height: 700px) {
+  .wrapper,
+  .wrapper2 {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding-top: 73px;
+  }
+}
+.p{
+    color: rgb(98, 99, 100);
+    font-size: large;
+    align-items: center;
+
+}
+@media screen and (max-width: 300px) {
+  .wrapper2 > h1 {
+    font-size: 1.5rem;
+  }
+  .form > input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .form > input:read-write {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

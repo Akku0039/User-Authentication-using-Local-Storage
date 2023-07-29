@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form - MeShop.</title>
+
+    <!-- <link rel="shortcut icon" href="./images/signup_icon.png" /> -->
+
+    <!-- linking the signup css -->
+    <link rel="stylesheet" href="../CSS/signup.css" />
+
+    <!-- Linking the navbar css -->
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+
+    <!-- Linking the Signup js -->
+    <script src="../JS/signup.js" defer></script>
+
+    <!-- linking the navbar js -->
+    <script src="../JS/navbar.js" defer></script>  
+      
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="wrapper2">
+            
+        <form class="form text-style">
+            <p class="p">Welcome back ! <img src="path/to/logo.png\\" alt="Logo"> </p>
+            
+             <h1 class="text-style">Signup to your account</h1>
+          <input type="text" name="first-name" id="first-name" placeholder="First Name" required/>
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required/>
+          <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email"/>
+          <input type="password" name="password" id="password" placeholder="Password" required autocomplete="new-password"/>
+          <input type="text" name="conf-password" id="conf-password" placeholder="Confirm Password" required/>
+
+          <input type="submit" value="Signup" id="submitBtn"/>
+        </form>
+      </div>
+    </div> 
+  </body>
+</html>
